@@ -14,7 +14,7 @@ public class PersonHandler {
     }
 
     public int getAge() {
-        LocalDateTime birthday = person.getBirthday();
+        LocalDateTime birthday = this.person.getBirthday();
         LocalDateTime now = LocalDateTime.now();
         int years = (int)birthday.until(now, ChronoUnit.YEARS);
         return years;

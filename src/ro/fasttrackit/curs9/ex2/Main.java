@@ -4,9 +4,8 @@ import java.time.LocalDateTime;
 
 public class Main {
     public static void main(String[] args) {
-        Employee employee1 = new Employee("Maria","Pop",
-                LocalDateTime.of(1997,12,2,10,44),"Cluj",
-                LocalDateTime.of(2010,5,6,14,55),"head of department");
+        Employee employee1 = new Employee("Maria","Fanca",LocalDateTime.of(1987,12,5,14,55),
+                "Cluj",LocalDateTime.of(2010,12,4,4,3),"boss");
         PersonHandler personhandler = new PersonHandler(employee1);
         printDetails(personhandler);
 
@@ -18,6 +17,6 @@ public class Main {
 
     }
     private static void printDetails(PersonHandler personhandler) {
-        System.out.println("Person name is: " + personhandler.getFullName() + ". This person is " + personhandler.getAge()+ " years old.");
+        System.out.println("Person's name is: " + personhandler.getFullName() + ". This person is " + personhandler.getAge()+ " years old.");
     }
 }

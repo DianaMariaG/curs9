@@ -8,15 +8,15 @@ public class Fridge extends Electronics{
         this.temperature = temp;
     }
 
+    @Override
     public int getQuantity() {
-        return quantity;
+        return super.getQuantity();
     }
 
     @Override
     public int increasePrice() {
-        return this.price + (20*this.price)/100 + 20;
+        return super.increasePrice();
     }
-
 
     public int decreaseTemp(int decrement) {
         return this.temperature -= decrement;

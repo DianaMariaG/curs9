@@ -10,16 +10,13 @@ public class Cosmetics extends Product {
         this.weight = weight;
     }
 
-    public void setDescription(String description) {
-        this.description = description;
-    }
-
+    @Override
     public String getDescription() {
-        return description;
+        return super.getDescription();
     }
 
     public int newPrice(int supplement) {
-        return this.price + supplement;
+        return super.getPrice() + supplement;
     }
 
 }
